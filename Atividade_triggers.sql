@@ -15,6 +15,7 @@ BEGIN
         UPDATE `JAZIGO`
         SET `idDefuntoJazigo` = NEW.idDefunto
         WHERE `idJazigo` = idJazigoDisponivel;
+    END IF;
 END$$
 DELIMITER ;
 
